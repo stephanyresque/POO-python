@@ -1,6 +1,8 @@
 from datetime import datetime
+from random import randint
 
 #método da classe é como a variável da classe. É uma função disponível a toda classe. Uma função(método) que se baseia na classe.
+#métodos estáticos: não precisa nem de uma instância (self) nem da classe (cls)
 class Pessoa: 
 
     ano_atual = int(datetime.strftime(datetime.now(), '%Y')) 
@@ -58,8 +60,14 @@ class Pessoa:
     def por_ano_nascimento(cls, nome, ano_nascimento): #"cls" refere-se a  classe "Pessoa", assim como "self" se refere a instância
         idade = cls.ano_atual - ano_nascimento #veja que a variável global da classe está disponível
         return cls(nome, idade) #assim eu consigo criar uma nova instância
+    
+    @staticmethod
+    def gera_id():
+        rand = randint(10000, 19999)
+        return rand
         
 
 """
 OBS: "@classmethod" é um decorador que decora um método de classe
+OBS: "staticmethod" tbm é um decorador
 """
