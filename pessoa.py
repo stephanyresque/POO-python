@@ -7,7 +7,7 @@ class Pessoa:
 
     ano_atual = int(datetime.strftime(datetime.now(), '%Y')) #"ano_atual" é uma variável da classe em si -> todos os objetos da classe terão essa variável
 
-    def __init__(self, name, old, comendo=False, falando=False):
+    def __init__(self, name, old, comendo=False, falando=False): #construtor!
         self.nome = name   #esses 'self.algo' estão disponíveis para outros métodos dentro da classe 
         self.idade = old
         self.comendo = comendo     #aqui temos variáveis da instância
