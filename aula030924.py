@@ -12,7 +12,7 @@ def ObterMediaGeral(mediaAlunos:list, totalAlunos:int):
 
 mediaAlunos = []
 
-for i in range(5):
+for i in range(3):
 
     n1 = float(input("Digite a n1 do aluno: "))
     n2 = float(input("Digite a n2 do aluno: "))
@@ -22,7 +22,7 @@ for i in range(5):
 
     print(f'A média do {i+1}° aluno é {round(mediaAlunos[i],2)} ')
     
-mediaTurma = ObterMediaGeral(mediaAlunos, 5)
+mediaTurma = ObterMediaGeral(mediaAlunos, 3)
 print(f'A média da turma é {mediaTurma}')
 
 
