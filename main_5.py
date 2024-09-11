@@ -42,6 +42,11 @@ bd.inserir_cliente(3, 'Adriano')
 bd.inserir_cliente(4, 'Miguel')
 
 print(bd.dados)
+print()
+bd.lista_clientes()
+print()
+bd.apaga_clientes(3)
+print(bd.dados)
 
 """
 bd.__dados = 'outra coisa' #por ser privado, não quebrou -> criou um outro atributo
