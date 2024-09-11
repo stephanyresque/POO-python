@@ -9,8 +9,8 @@ class A:
 a1 = A()
 a2 = A()
 
-#A.vc = 321 -> altero a variável da classe
-#a1.vc = 321 #crio um atributo direto na instância
+A.vc = 444 #-> altero a variável da classe
+a1.vc = 333 #crio um atributo direto na instância, só mudou no a1
 
 print(a1.vc)
 print(a2.vc)
