@@ -18,3 +18,5 @@ carrinho.inserir_produto(p3)
 
 carrinho.lista_produto()
 print(carrinho.soma_total())
+print()
+print(carrinho.produtos)
