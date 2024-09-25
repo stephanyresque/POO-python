@@ -1,5 +1,15 @@
 from abc import ABC, abstractmethod
 
+class FuncionarioAssalariado(ABC):
+    @abstractmethod
+    def receberSalario(self, nTurmas):
+        pass
+
+class Estudante(ABC):
+    @abstractmethod
+    def estudar(self):
+        pass
+
 class Professor(ABC):
 
     def __init__(self, nome, nTurmas, salario):
@@ -8,11 +18,11 @@ class Professor(ABC):
         self.__salario = salario
     
     @abstractmethod
-    def elaborarProvas(self) -> list:
+    def elaborarProvas(self):
         pass
 
     @abstractmethod
-    def corrigirProvas(self, prova) -> float:
+    def corrigirProvas(self, prova):
         pass
 
     @property
@@ -49,30 +59,23 @@ class Professor(ABC):
 class ProfessorEducacaoBasica(Professor):
     
     def elaborarProvas(self):
-        provas = []
-        for _ in range(self.nTurmas):
-            questoes = [f"{j+1}" for j in range(5)] 
-            prova = Prova(questoes)
-            provas.append(prova)
-        return provas
+        prova = Prova(['01', '02', '03', '04', '05'])
+        return prova
+    
+    def corrigirProvas(self, prova):
+        prova.nota = 2* (len(prova.respostas))
+        return prova.nota
 
 class ProfessorUniversitario(Professor):
     
     def elaborarProvas(self):
-        provas = []
-        for _ in range(self.nTurmas):
-            questoes = [f"{j+1}" for j in range(10)]  
-            prova = Prova(questoes)
-            provas.append(prova)
-        return provas
-    
+        prova = Prova(['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'])
+        return prova
+
+
     def corrigirProvas(self, prova):
-        nota_total = 0
-        for i, resposta in enumerate(prova.respostas):
-            if resposta == "resposta correta": 
-                nota_total += 1
-        prova.nota(nota_total)
-        return nota_total
+        prova.nota = (len(prova.respostas))
+        return prova.nota
     
 class Prova:
     def __init__(self, questoes:list):
@@ -109,12 +112,12 @@ class Aluno:
     def __init__(self, nome, matricula):
         self.__nome = nome
         self.__matricula = matricula
-        self.respostas = []
 
     def fazerProva(self, prova):
+        print("Digite as questões respondidas pelo aluno(01, 02, ...): ")
         for i in range(len(prova.questoes)):
-            resp = input(f"Digite a {i+1}° resposta do aluno")
-            self.respostas.append(resp)
+            resp = input()
+            prova.respostas.append(resp)
         
     @property
     def nome(self):
@@ -132,5 +135,6 @@ class Aluno:
     def matricula(self, val):
         self.__matricula = val
 
-    
+    def estudar(self):
+        print("Aluno está estudando.")
 
