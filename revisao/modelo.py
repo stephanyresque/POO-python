@@ -114,8 +114,10 @@ class Aluno:
         self.__matricula = matricula
 
     def fazerProva(self, prova):
-        print("Digite as questões respondidas pelo aluno(01, 02, ...): ")
-        for i in range(len(prova.questoes)):
+        print("Digite quantas questões o aluno respondeu: ")
+        n = int(input())
+        print("Digite as questões que o aluno respondeu(01, 02, 03...): ")
+        for _ in range(n):
             resp = input()
             prova.respostas.append(resp)
         
