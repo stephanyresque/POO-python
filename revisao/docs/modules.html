@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Módulos &#8212; Documentação documentacao_tarefa_poo 1.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=c058f7c8" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=05d536ce"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=daa5921a"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="prev" title="Documentação do Projeto POO" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-modelo">
+<span id="modulos"></span><h1>Módulos<a class="headerlink" href="#module-modelo" title="Link para este cabeçalho">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.Aluno">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">Aluno</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">matricula</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Aluno" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que representa um aluno.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Aluno.estudar">
+<span class="sig-name descname"><span class="pre">estudar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Aluno.estudar" title="Link para esta definição">¶</a></dt>
+<dd><p>Método que define o aluno estudando.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Aluno.fazerProva">
+<span class="sig-name descname"><span class="pre">fazerProva</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prova</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Aluno.fazerProva" title="Link para esta definição">¶</a></dt>
+<dd><p>Permite que o aluno faça uma prova, respondendo a questões.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prova</strong> – Objeto Prova que o aluno irá responder.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Aluno.matricula">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">matricula</span></span><a class="headerlink" href="#modelo.Aluno.matricula" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna o número de matrícula do aluno.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Aluno.nome">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nome</span></span><a class="headerlink" href="#modelo.Aluno.nome" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna o nome do aluno.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.Estudante">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">Estudante</span></span><a class="headerlink" href="#modelo.Estudante" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>classe abstrata que representa um estudante</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Estudante.estudar">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">estudar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Estudante.estudar" title="Link para esta definição">¶</a></dt>
+<dd><p>método abstrato que define a ação de estudar.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.FuncionarioAssalariado">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">FuncionarioAssalariado</span></span><a class="headerlink" href="#modelo.FuncionarioAssalariado" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>classe abstrata que representa um funcionário assalariado</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.FuncionarioAssalariado.receberSalario">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">receberSalario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nTurmas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.FuncionarioAssalariado.receberSalario" title="Link para esta definição">¶</a></dt>
+<dd><p>Método abstrato que calcula o salário com base no número de turmas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nTurmas</strong> – Número de turmas atribuídas ao funcionário.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.Professor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">Professor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTurmas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">salario</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Professor" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Classe abstrata que representa um professor, derivada de FuncionarioAssalariado.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Professor.corrigirProvas">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">corrigirProvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prova</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Professor.corrigirProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Método abstrato que define a correção de provas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prova</strong> – Objeto do tipo Prova que será corrigido.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Professor.elaborarProvas">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elaborarProvas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Professor.elaborarProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Método abstrato que define a criação de provas pelo professor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Professor.estudar">
+<span class="sig-name descname"><span class="pre">estudar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Professor.estudar" title="Link para esta definição">¶</a></dt>
+<dd><p>Método que define o professor estudando.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Professor.nTurmas">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nTurmas</span></span><a class="headerlink" href="#modelo.Professor.nTurmas" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna o número de turmas atribuídas ao professor.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Professor.nome">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nome</span></span><a class="headerlink" href="#modelo.Professor.nome" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna o nome do professor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.Professor.receberSalario">
+<span class="sig-name descname"><span class="pre">receberSalario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nTurmas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Professor.receberSalario" title="Link para esta definição">¶</a></dt>
+<dd><p>Calcula o salário do professor com base no número de turmas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nTurmas</strong> – Número de turmas que o professor possui.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Professor.salario">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">salario</span></span><a class="headerlink" href="#modelo.Professor.salario" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna o salário base do professor.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.ProfessorEducacaoBasica">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">ProfessorEducacaoBasica</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTurmas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">salario</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorEducacaoBasica" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <a class="reference internal" href="#modelo.Professor" title="modelo.Professor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Professor</span></code></a></p>
+<p>Classe que representa um professor de educação básica.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.ProfessorEducacaoBasica.corrigirProvas">
+<span class="sig-name descname"><span class="pre">corrigirProvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prova</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorEducacaoBasica.corrigirProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Corrige a prova e atribui uma nota baseada no dobro da quantidade de respostas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prova</strong> – Objeto Prova a ser corrigido.</p>
+</dd>
+<dt class="field-even">Retorna<span class="colon">:</span></dt>
+<dd class="field-even"><p>Nota atribuída à prova.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.ProfessorEducacaoBasica.elaborarProvas">
+<span class="sig-name descname"><span class="pre">elaborarProvas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorEducacaoBasica.elaborarProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Cria e retorna uma prova com 5 questões.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorna<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Objeto Prova contendo 5 questões.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.ProfessorUniversitario">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">ProfessorUniversitario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nTurmas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">salario</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorUniversitario" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <a class="reference internal" href="#modelo.Professor" title="modelo.Professor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Professor</span></code></a></p>
+<p>Classe que representa um professor universitário.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.ProfessorUniversitario.corrigirProvas">
+<span class="sig-name descname"><span class="pre">corrigirProvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prova</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorUniversitario.corrigirProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Corrige a prova e atribui uma nota baseada no número de respostas corretas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prova</strong> – Objeto Prova a ser corrigido.</p>
+</dd>
+<dt class="field-even">Retorna<span class="colon">:</span></dt>
+<dd class="field-even"><p>Nota atribuída à prova.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.ProfessorUniversitario.elaborarProvas">
+<span class="sig-name descname"><span class="pre">elaborarProvas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelo.ProfessorUniversitario.elaborarProvas" title="Link para esta definição">¶</a></dt>
+<dd><p>Cria e retorna uma prova com 10 questões.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorna<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Objeto Prova contendo 10 questões.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.Prova">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">Prova</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">questoes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelo.Prova" title="Link para esta definição">¶</a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que representa uma prova com questões, respostas e nota atribuída.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Prova.nota">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nota</span></span><a class="headerlink" href="#modelo.Prova.nota" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna a nota atribuída à prova.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Prova.questoes">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">questoes</span></span><a class="headerlink" href="#modelo.Prova.questoes" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna as questões da prova.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelo.Prova.respostas">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">respostas</span></span><a class="headerlink" href="#modelo.Prova.respostas" title="Link para esta definição">¶</a></dt>
+<dd><p>Propriedade que retorna as respostas da prova.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">documentacao_tarefa_poo</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navegação</h3>
+<p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Módulos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.Aluno"><code class="docutils literal notranslate"><span class="pre">Aluno</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.Estudante"><code class="docutils literal notranslate"><span class="pre">Estudante</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.FuncionarioAssalariado"><code class="docutils literal notranslate"><span class="pre">FuncionarioAssalariado</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.Professor"><code class="docutils literal notranslate"><span class="pre">Professor</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.ProfessorEducacaoBasica"><code class="docutils literal notranslate"><span class="pre">ProfessorEducacaoBasica</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.ProfessorUniversitario"><code class="docutils literal notranslate"><span class="pre">ProfessorUniversitario</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.Prova"><code class="docutils literal notranslate"><span class="pre">Prova</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="capítulo anterior">Documentação do Projeto POO</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, stephany.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.0.2</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
